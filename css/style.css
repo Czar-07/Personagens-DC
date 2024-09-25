@@ -1,0 +1,638 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Cabecalho */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px;
+    background-color: white;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+header nav > ul > li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+header nav > ul > li > a:hover{
+    color: skyblue;
+    transition: 0.5s ease;
+}
+
+header img{
+    margin-right: 10px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+main {
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+/* Estilo para o contêiner do carrossel */
+.div-slider {
+    width: 100%; /* Largura automática */
+    height: auto; /* Altura do carrossel */
+    text-align: center; /* Centraliza o conteúdo textualmente */
+    margin-top: 20px;
+}
+
+/* Estilo para o contêiner dos slides */
+.slides-front {
+    padding: 0; /* Remove o preenchimento */
+    width: 980px; /* Largura do carrossel */
+    height: 370px; /* Altura do carrossel */
+    display: block; /* Exibe o contêiner como bloco */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+}
+
+/* Desativa a seleção de texto para todos os elementos dentro de slides-front */
+.slides-front * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Esconde os inputs de controle dos slides */
+.slides-front input {
+    display: none;
+}
+
+/* Estilo para o contêiner dos slides */
+.slide-container {
+    display: block; /* Exibe o contêiner como bloco */
+}
+
+/* Estilo para cada slide */
+.slide {
+    top: 0; /* Posiciona o slide no topo do contêiner */
+    opacity: 0; /* Torna o slide invisível inicialmente */
+    width: 980px; /* Largura do slide */
+    height: auto; /* Altura do slide */
+    display: block; /* Exibe o slide como bloco */
+    position: absolute; /* Posiciona o slide absolutamente dentro do contêiner */
+    transform: scale(0); /* Inicialmente escala o slide para 0 */
+    transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição suave para todas as propriedades */
+}
+
+/* Estilo para a imagem dentro de cada slide */
+.slide img {
+    width: 100%; /* Largura da imagem é 100% do slide */
+    height: 100%; /* Altura da imagem é 100% do slide */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99.3%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.slide-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    opacity: 75%;
+    width: 80%;
+}
+
+/* Estilo para os botões de navegação (setas) */
+.nav label {
+    width: 150px; /* Largura dos botões de navegação */
+    height: 100%; /* Altura dos botões de navegação */
+    display: none; /* Inicialmente escondido */
+    position: absolute; /* Posiciona o botão absolutamente */
+    opacity: 0; /* Torna o botão invisível */
+    z-index: 9; /* Define a ordem de empilhamento (acima dos slides) */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    transition: opacity .2s; /* Transição suave para a opacidade */
+    color: rgb(255, 255, 255); /* Cor do texto dos botões de navegação */
+    font-size: 156pt; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    line-height: 480px; /* Altura da linha igual à altura dos botões de navegação */
+    font-family: "Varela Round", sans-serif; /* Fonte dos botões de navegação */
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo transparente */
+    text-shadow: 0px 0px 15px rgb(119, 119, 119); /* Sombra do texto */
+}
+
+/* Mostra os botões de navegação quando o slide é hover (passa o mouse sobre) */
+.slide:hover + .nav label {
+    opacity: 0.5; /* Torna o botão parcialmente visível */
+}
+
+/* Mostra o botão de navegação quando o mouse passa por cima */
+.nav label:hover {
+    opacity: 1; /* Torna o botão totalmente visível */
+}
+
+/* Posiciona o botão de navegação para avançar slides no lado direito */
+.nav .next {
+    right: 0; /* Alinha à direita */
+}
+
+/* Estilo aplicado aos slides quando o input de controle está checado */
+input:checked + .slide-container .slide {
+    opacity: 1; /* Torna o slide visível */
+    transform: scale(1); /* Restaura a escala do slide para 1 */
+    transition: opacity 1s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição suave para a opacidade */
+}
+
+/* Mostra os botões de navegação quando o input de controle está checado */
+input:checked + .slide-container .nav label {
+    display: block; /* Torna os botões de navegação visíveis */
+}
+
+/* Muda a cor dos pontos quando o input correspondente está checado */
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5 {
+    background: rgba(0, 0, 0, 0.8); /* Torna o ponto correspondente mais escuro */
+}
+
+/* Efeito de zoom quando um elemento com a classe 'efeito' é hover */
+.efeito:hover {
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    transition-duration: 1s; /* Duração da transição */
+    transform: scale(1.3, 1.3); /* Aumenta o tamanho do elemento em 1.3x */
+}
+
+.navagation_bar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navagation_bar li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navagation_bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.villan-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #6D0000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+}
+
+.antihero-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+}
+
+.teams-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #003DA5;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+}
+
+.navagation_bar a:hover{
+    color: #cc0000;
+    transition: 0.5s ease;
+}
+
+.banner{
+    background-image: url(../img/dc_universe.png);
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.banner_c{
+    max-width: 80%;
+
+}
+
+.banner h1{
+    font-size: 1.25rem;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.banner p{
+    font-size: 1rem;
+    margin: 5px 0 15px;
+}
+
+.banner_button{
+    background-color: #ff0000;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.banner_button:hover{
+    background-color: #cc0000;
+}
+
+.hero h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #00274D;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.villan h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #6D0000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.antihero h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.teams h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: #003DA5;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.hero, .villan{
+    margin-bottom: 20px;
+}
+
+.character_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.character_card{
+    width: 18.75rem;
+    height: 25rem;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.6s ease;
+    will-change: transform;
+}
+
+.card-front{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+}
+
+.card-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-front h2{
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-back{
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.card-back h2{
+    margin-bottom: 10px;
+}
+
+.card-back p{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.card-back a{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition:  0.3s ease;
+    cursor: pointer;
+    margin: 2.5px;
+}
+
+.card-back a:hover{
+    background-color: #444;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character_card:hover .card-front{
+    transform: rotateY(-180deg)
+}
+
+.character_card:hover .card-back{
+    transform: rotateY(0deg);
+}
+
+.banner_button, .card-back a, .search_button{
+    transition: 0.3s ease-out;
+}
+
+.banner_button:hover, .card-back:hover, .search_button:hover{
+    transform: scale(1.05);
+}
+
+.search_container{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    justify-content: center; 
+    margin: 4rem auto;
+}
+
+.search_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.search_input{
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search_button{
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search_input:focus{
+    border-color: #ff0000;
+}
+
+.search_button:hover{
+    background-color: #d40000;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.grid-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-card h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.top:hover {
+    background-color: #0056b3; 
+}
+
+/* Rodapé */
+footer{
+    height: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+footer ul{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul > li{
+    padding: 10px;
+    list-style-type: none;
+    border-right: 1px solid white;
+}
+
+footer ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > h2{
+    text-align: center;
+    padding: 20px;
+}

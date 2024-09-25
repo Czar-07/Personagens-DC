@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Personagens</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="img/logo.png" alt="" width="50px" height="50px">
+            <h1>Doentes da Cabeça</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Personagens</a></li>
+                <li><a href="https://cassiosilva007.github.io/HQ/index.html">HQ´s</a></li>
+                <li><a href="https://amandat0802.github.io/Dc_SeriesFilmes/">Séries/Filmes</a></li>
+                <li><a href="https://enzoribeirodasilva.github.io/noticias/">Noticias</a></li>
+                <li><a href="#">Loja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="banner">
+        <div class="banner_c">
+            <h1>Bem-Vindo ao universo da DC Comics!</h1>
+            <p>Descubra os personagens desse universo incrível</p>
+            <a href="#character" class="banner_button">Conheça nossos personagens</a>
+        </div>
+    </div>
+
+            
+    <div class="div-slider">
+        <ul class="slides-front">
+          <input type="radio" name="radio-btn" id="img-1" checked="">
+          <li class="slide-container">
+             <div class="slide">
+               <img src="img/carrossel/mostro-do-pantano.png" alt="Monstro do Pântano">
+               <div class="slide-overlay">
+                <div class="slide-text">
+                    <h3>Monstro do Pântano</h3>
+                    <p>Monstro do Pântano, ou Swamp Thing, é uma entidade vegetal da DC Comics, originada do cientista Alec Holland. Ele defende a natureza e explora temas de ecologia e identidade, sendo uma figura poderosa e trágica.</p>
+                </div>
+               </div>
+             </div>
+             <div class="nav">
+               <label for="img-5" class="prev">‹</label>
+               <label for="img-2" class="next">›</label>
+             </div>
+          </li>
+      
+          <input type="radio" name="radio-btn" id="img-2">
+          <li class="slide-container">
+              <div class="slide">
+                <img src="img/carrossel/mulher-gavião.png" alt="Mulher Gavião">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h3>Mulher Gavião</h3>
+                        <p>Mulher-Gavião, ou Hawkgirl, é uma heroína da DC Comics com a habilidade de voar. Conhecida como Shiera Sanders, ela é uma guerreira reencarnada, lutando por justiça e defendendo a Terra contra ameaças.</p>
+                    </div>
+                   </div>
+              </div>
+          <div class="nav">
+            <label for="img-1" class="prev">‹</label>
+            <label for="img-3" class="next">›</label>
+          </div>
+          </li>
+      
+          <input type="radio" name="radio-btn" id="img-3">
+          <li class="slide-container">
+              <div class="slide">
+                <img src="img/carrossel/super-girl.png" alt="Super Girl">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h3>Super Girl</h3>
+                        <p>Supergirl, ou Kara Zor-El, é uma heroína da DC Comics e prima do Superman. Ela possui habilidades semelhantes, como superforça, voo e visão de raios. Kara luta pela justiça e pela proteção da Terra, enfrentando vilões e explorando sua identidade como Kryptoniana e humana.</p>
+                    </div>
+                   </div>
+              </div>
+          <div class="nav">
+            <label for="img-2" class="prev">‹</label>
+            <label for="img-4" class="next">›</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-4" checked="">
+          <li class="slide-container">
+             <div class="slide">
+               <img src="img/carrossel/jessica-cruz.png" alt="Jessica Cruz">
+               <div class="slide-overlay">
+                <div class="slide-text">
+                    <h3>Jessica Cruz</h3>
+                    <p>Jessica Cruz é uma personagem da DC Comics, conhecida como Lantern Green. Ela superou traumas e fobias para se tornar uma heroína, usando seu anel para canalizar coragem e vontade. Sua jornada destaca a luta contra o medo e a busca pela justiça.</p>
+                </div>
+               </div>
+             </div>
+             <div class="nav">
+               <label for="img-3" class="prev">‹</label>
+               <label for="img-5" class="next">›</label>
+             </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-5" checked="">
+          <li class="slide-container">
+             <div class="slide">
+               <img src="img/carrossel/asa-noturna.png" alt="Asa Noturna">
+               <div class="slide-overlay">
+                <div class="slide-text">
+                    <h3>Asa Noturna</h3>
+                    <p>Asa Noturna, ou Dick Grayson, é um herói da DC Comics e ex-Robin. Depois de se separar do Batman, ele adota a identidade de Asa Noturna, lutando contra o crime em Blüdhaven. Conhecido por suas habilidades acrobáticas, Dick é um símbolo de esperança e justiça.</p>
+                </div>
+               </div>
+             </div>
+             <div class="nav">
+               <label for="img-4" class="prev">‹</label>
+               <label for="img-1" class="next">›</label>
+             </div>
+          </li>
+      
+        </ul>
+    </div>
+
+
+
+    <main>
+
+        <div class="search_container">
+            <form action="/search" method="get" class="search_form">
+                <input type="text" placeholder="Procure seu herói favorito..." name="search" class="search_input">
+                <button type="submit" class="search_button">Pesquisar</button>
+            </form>
+        </div>
+
+        <nav class="navagation_bar">
+            <ul>
+                <li><a href="#villan" class="villan-nav">Vilões</a></li>
+                <li><a href="#antihero" class="antihero-nav">Anti-Heróis</a></li>
+                <li><a href="#teams" class="teams-nav">Equipes</a></li>
+            </ul>
+        </nav>
+
+        <section id="character">
+            <div class="hero">
+                <h1>Heróis</h1>
+                <div class="character_container">
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/aquaman.png" alt="Aquaman" class="hero_image">
+                            <h2>Aquaman</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Aquaman</h2>
+                            <p>Aquaman, também conhecido como Arthur Curry, é o rei de Atlântida. Com a habilidade de comandar o mar e suas criaturas, ele defende os oceanos e une o mundo submarino ao mundo acima da água.</p>
+                            <a href="https://www.dc.com/characters/aquaman">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/arqueiro_verde.png" alt="Arqueiro Verde" class="hero_image">
+                            <h2>Arqueiro Verde</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Arqueiro Verde</h2>
+                            <p>Arqueiro Verde, também conhecido como Oliver Queen, é o vigilante de Star City. Mestre arqueiro e habilidoso combatente, ele usa sua destreza e gadgets para proteger a cidade e lutar contra a injustiça.</p>
+                            <a href="https://www.dc.com/characters/green-arrow">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/batman.png" alt="Batman" class="hero_image">
+                            <h2>Batman</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Batman</h2>
+                            <p>Batman, também conhecido como Bruce Wayne, é um vigilante de Gothan City. Ele luta contra o crime usando suas habilidades de detetive, artes marciais, e tecnologia avançada, sempre buscado justiça após a morte de seus pais.</p>
+                            <a href="https://www.dc.com/characters/batman">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/cacador_de_marte.png" alt="Caçador de Marte" class="hero_image">
+                            <h2>Caçador de Marte</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Caçador de Marte</h2>
+                            <p>Caçador de Marte, também conhecido como J'onn J'onzz, é o último de sua raça. Com habilidades telepáticas e força sobre-humana, ele luta pela justiça e pela proteção da Terra, enquanto busca um lar para seu povo perdido.</p>
+                            <a href="https://www.dc.com/characters/martian-manhunter">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/cyborg.png" alt="Cyborg" class="hero_image">
+                            <h2>Cyborg</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Cyborg</h2>
+                            <p>Cyborg, também conhecido como Victor Stone, é um herói meio humano e meio máquina. Com força aprimorada, armamento avançado e uma interface tecnológica, ele luta para proteger o mundo enquanto busca equilíbrio entre seu lado humano e cibernético.</p>
+                            <a href="https://www.dc.com/characters/cyborg">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/doutor_destino.png" alt="Doutor Destino" class="hero_image">
+                            <h2>Doutor Destino</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Doutor Destino</h2>
+                            <p>Doutor Destino, também conhecido como Kent Nelson, é o portador do elmo de Nabu, um artefato místico. Como Senhor da Ordem, ele possui vastos poderes mágicos, lutando para manter o equilíbrio entre as forças cósmicas.</p>
+                            <a href="https://www.dc.com/characters/doctor-fate">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/estelar.png" alt="Estelar" class="hero_image">
+                            <h2>Estelar</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Estelar</h2>
+                            <p>Estelar, também conhecida como Koriand'r, é uma heroína alienígena do planeta Tamaran. Ela combate o mal com suas habilidades de voo, superforça e rajadas de energia estelar, além de sua experiência em combate e estratégias. </p>
+                            <a href="https://www.dc.com/characters/starfire">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/flash.png" alt="Flash" class="hero_image">
+                            <h2>Flash</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Flash</h2>
+                            <p>Flash, também conhecido como Barry Allen, é o homem mais rápido do mundo. Usando sua incrível velocidade, ele combate o crime e viaja através do tempo, sempre em busca de justiça e do bem maior.</p>
+                            <a href="https://www.dc.com/characters/the-flash">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/lanterna_verde.png" alt="Lanterna Verde" class="hero_image">
+                            <h2>Lanterna Verde</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Lanterna Verde</h2>
+                            <p>Lanterna Verde, também conhecido como Hal Jordan, é um membro da Tropa dos Lanternas Verdes. Com o poder de seu anel, ele protege o universo contra ameaças cósmicas, guiado pela coragem e pela justiça.</p>
+                            <a href="https://www.dc.com/characters/green-lantern">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/mulher_maravilha.png" alt="Mulher-Maravilha" class="hero_image">
+                            <h2>Mulher-Maravilha</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Mulher-Maravilha</h2>
+                            <p>Mulher-Maravilha, também conhecida como Diana Prince, é uma princesa amazona com força sobre-humana e habilidades de combate excepcionais. Ela luta pela justiça e pela igualdade, guiada pelos ideais de sua terra natal.</p>
+                            <a href="https://www.dc.com/characters/wonder-woman">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/ravena.png" alt="Ravena" class="hero_image">
+                            <h2>Ravena</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Ravena</h2>
+                            <p>Ravena, filha do demônio Trigon, é uma empata e poderosa maga. Lutando para controlar sua herança demoníaca, ela usa sua magia das sombras para proteger seus amigos e impedir que o mal consuma sua alma.</p>
+                            <a href="https://www.dc.com/characters/raven">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/shazam.png" alt="Shazam" class="hero_image">
+                            <h2>Shazam</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Shazam</h2>
+                            <p>Shazam, também conhecido como Billy Batson, é um jovem que se transforma em um poderoso herói ao dizer a palavra 'Shazam'. Com a força de Hércules, a sabedoria de Salomão e os poderes de deuses antigos, ele luta contra o mal com um coração puro.</p>
+                            <a href="https://www.dc.com/characters/shazam">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/super_choque.png" alt="Super Choque" class="hero_image">
+                            <h2>Super Choque</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Super Choque</h2>
+                            <p>Super Choque, também conhecido como Virgil Hawkins, é um jovem herói que controla a eletricidade. Após ganhar seus poderes em um acidente químico, ele usa suas habilidades eletromagnéticas para proteger Dakota City e combater o crime.</p>
+                            <a href="https://www.dc.com/characters/static">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/superman.png" alt="Superman" class="hero_image">
+                            <h2>Superman</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Superman</h2>
+                            <p>Superman, também conhecido como Clark Kent, é um ícone da verdade e da justiça. Com sua força sobre-humana, visão de calor e capacidade de voar, ele defende a Terra contra ameaças e inspira esperança em todos.</p>
+                            <a href="https://www.dc.com/characters/superman">Descubra mais →</a>
+                        </div>  
+                    </div>
+                    <div class="character_card">
+                        <div class="card-front">
+                            <img src="img/hero/zatanna.png" alt="Zatanna" class="hero_image">
+                            <h2>Zatanna</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Zatanna</h2>
+                            <p>Zatanna Zatara é uma poderosa maga e ilusionista. Com feitiços lançados através de palavras ditas ao contrário, ela usa sua magia para combater ameaças sobrenaturais e proteger o mundo místico.</p>
+                            <a href="https://www.dc.com/characters/zatanna">Descubra mais →</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <section id="villan">
+                <div class="villan">
+                    <h1>Vilões</h1>
+                    <div class="character_container">
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/anti_monitor.png" alt="Antimonitor" class="hero_image">
+                                <h2>Antimonitor</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Antimonitor</h2>
+                                <p>O Anti-Monitor é uma entidade cósmica que busca destruir o multiverso e absorver suas energias. Com uma aparência imponente e uma armadura escura, ele representa uma ameaça devastadora para todos os universos.</p>
+                                <a href="https://www.dc.com/characters/anti-monitor">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/arraia_negra.png" alt="Arraia Negra" class="hero_image">
+                                <h2>Arraia Negra</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Arraia Negra</h2>
+                                <p>Arraia Negra é um vilão com tecnologia subaquática avançada que busca dominar os oceanos. Usando um traje especial e habilidades aquáticas, ele enfrenta o Aquaman em seus esforços para controlar os mares.</p>
+                                <a href="https://www.dc.com/characters/black-manta">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/brainiac.png" alt="Brainiac" class="hero_image">
+                                <h2>Brainiac</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Brainiac</h2>
+                                <p>Brainiac, também conhecido como o Colecionador de Cidades, é um alienígena cibernético que viaja pelo cosmos coletando cidades inteiras. Seu objetivo é conquistar e destruir planetas, incluindo a Terra, enquanto adiciona suas conquistas à sua coleção.</p>
+                                <a href="https://www.dc.com/characters/brainiac">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/capitão_frio.png" alt="DCapitão Frio class="hero_image">
+                                <h2>Capitão Frio</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Capitão Frio</h2>
+                                <p>Capitão Frio, também conhecido como Leonard Snart, é um vilão do universo DC e um dos principais inimigos do Flash. Ele utiliza uma arma de congelamento que pode criar gelo e controlar temperaturas, tornando-se uma ameaça congelante para seus adversários.</p>
+                                <a href="https://www.dc.com/characters/captain-cold">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/charada.png" alt="Charada" class="hero_image">
+                                <h2>Charada</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Charada</h2>
+                                <p>Charada, conhecido como Edward Nygma, é um criminoso de Gotham obcecado por enigmas e charadas. Ele desafia Batman com quebra-cabeças complexos e crimes engenhosos, sempre em busca de provar sua inteligência superior.</p>
+                                <a href="https://www.dc.com/characters/riddler">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/coringa.png" alt="Coringa" class="hero_image">
+                                <h2>Coringa</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Coringa</h2>
+                                <p>O Coringa, também conhecido como o Palhaço do Crime, é um vilão psicopata de Gotham City. Ele espalha caos e destruição com seu sorriso macabro e métodos imprevisíveis, sempre desafiando o Batman com sua crueldade e anarquia.</p>
+                                <a href="https://www.dc.com/characters/the-joker">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/darkseid.png" alt="Darkseid" class="hero_image">
+                                <h2>Darkseid</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Darkseid</h2>
+                                <p>Darkseid, também conhecido como o Governante de Apokolips, é um dos vilões mais poderosos do universo DC. Com seu desejo de dominar o universo através da Anti-Vida, ele representa uma ameaça colossal para todos os heróis.</p>
+                                <a href="https://www.dc.com/characters/darkseid">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/duas_caras.png" alt="Duas Caras" class="hero_image">
+                                <h2>Duas Caras</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Duas Caras</h2>
+                                <p>Harvey Dent, conhecido como Duas-Caras, é um ex-promotor público de Gotham que se tornou vilão após um acidente que desfigurou metade de seu rosto. Ele decide suas ações de forma aleatória com uma moeda de dois lados, refletindo sua luta interna entre o bem e o mal.</p>
+                                <a href="https://www.dc.com/characters/two-face">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/flash_reverso.png" alt="Flash Reverso" class="hero_image">
+                                <h2>Flash Reverso</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Flash Reverso</h2>
+                                <p>O Flash Reverso, também conhecido como Eobard Thawne, é o inimigo jurado do Flash. Com poderes semelhantes aos do velocista escarlate, ele manipula o tempo para criar caos e destruir o herói, sempre com um plano de vingança.</p>
+                                <a href="https://www.dc.com/characters/reverse-flash">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/lex_luthor.png" alt="Lex Luthor" class="hero_image">
+                                <h2>Lex Luthor</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Lex Luthor</h2>
+                                <p>Lex Luthor, também conhecido como o gênio criminoso e bilionário, é o arqui-inimigo do Superman. Usando sua vasta riqueza e inteligência, ele busca derrotar o Homem de Aço e conquistar o mundo, sempre com planos engenhosos e cruéis.</p>
+                                <a href="https://www.dc.com/characters/lex-luthor">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/mulher-leopardo.png" alt="Mulher-Leopardo" class="hero_image">
+                                <h2>Mulher-Leopardo</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Mulher-Leopardo</h2>
+                                <p>A Mulher-Leopardo, é uma das principais vilãs da Mulher-Maravilha. Seu verdadeiro nome é Barbara Minerva, uma arqueóloga que ganha habilidades sobre-humanas e uma aparência felina após um ritual que a transforma em uma criatura com força, agilidade e garras de leopardo. </p>
+                                <a href="https://www.dc.com/characters/the-cheetah">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/pinguim.png" alt="Pinguim" class="hero_image">
+                                <h2>Pinguim</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Pinguim</h2>
+                                <p>O Pinguim, também chamado de Oswald Cobblepot, é um criminoso elegante de Gotham City. Ele controla o submundo da cidade com seu estilo sofisticado e armas exóticas, sempre com um plano para expandir seu poder e influência.</p>
+                                <a href="https://www.dc.com/characters/penguin">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/ras_al_ghul.png" alt="Ra's al Ghul" class="hero_image">
+                                <h2>Ra's al Ghul</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Ra's al Ghul</h2>
+                                <p>Ra’s al Ghul, também conhecido como o Imortal, é o líder da Liga dos Assassinos. Ele busca reformar o mundo através da destruição da corrupção e usa o Poço de Lázaro para prolongar sua vida, frequentemente entrando em conflito com o Batman.</p>
+                                <a href="https://www.dc.com/characters/ras-al-ghul">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/sinestro.png" alt="Sinestro" class="hero_image">
+                                <h2>Sinestro</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Sinestro</h2>
+                                <p>Sinestro, originalmente um Lanterna Verde, usa um anel amarelo para canalizar o medo e lidera a Tropa dos Lanternas Amarelos. Desiludido com a ordem dos Lanternas, ele busca impor seu próprio regime autoritário sobre o universo, acreditando que apenas o medo pode garantir a paz e a ordem.</p>
+                                <a href="https://www.dc.com/characters/sinestro">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/villan/trigon.png" alt="Trigon" class="hero_image">
+                                <h2>Trigon</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Trigon</h2>
+                                <p>Trigon é um demônio cósmico e um dos maiores inimigos dos Jovens Titãs. Ele é o pai de Ravena e busca conquistar e destruir mundos, utilizando seus imensos poderes demoníacos, como telepatia, telecinesia e manipulação de energia.</p>
+                                <a href="https://www.dc.com/characters/trigon">Descubra mais →</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="antihero">
+                <div class="antihero">
+                    <h1>Anti-Heróis</h1>
+                    <div class="character_container">
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/adao_negro.png" alt="Adão Negro" class="hero_image">
+                                <h2>Adão Negro</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Adão Negro</h2>
+                                <p>Adão Negro, também conhecido como Teth-Adam, é um poderoso anti-herói que protege seus interesses com habilidades sobre-humanas. Ele usa a força, velocidade e resistência concedidas pelos deuses egípcios para lutar contra inimigos e buscar justiça.</p>
+                                <a href="https://www.dc.com/characters/black-adam">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/arlequina.png" alt="Arlequina" class="hero_image">
+                                <h2>Arlequina</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Arlequina</h2>
+                                <p>Arlequina, ou Harleen Quinzel, é uma ex-psiquiatra que se tornou uma figura caótica e imprevisível em Gotham. Com um comportamento excêntrico e habilidades de combate, ela navega entre ser uma vilã e uma anti-heroína, frequentemente ao lado de outros criminosos ou heróis.</p>
+                                <a href="https://www.dc.com/characters/black-adam">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/azrael.png" alt="Azrael" class="hero_image">
+                                <h2>Azrael</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Azrael</h2>
+                                <p>Azrael, ou Jean-Paul Valley, é um vigilante do universo DC ligado à ordem dos Asas de São Dumas. Ele possui habilidades de combate avançadas e usa métodos extremos na luta contra o crime. Em um período, assumiu o manto de Batman.</p>
+                                <a href="https://dcheroesrpg.fandom.com/wiki/Azrael_(Jean-Paul_Valley)">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/bizzaro.png" alt="Bizarro" class="hero_image">
+                                <h2>Bizarro</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Bizarro</h2>
+                                <p>Bizarro é uma versão distorcida do Superman, criado com características opostas ao herói original. Ele possui força e habilidades similares ao Superman, mas seu comportamento e moral são invertidos, frequentemente agindo de forma confusa e destrutiva.</p>
+                                <a href="https://www.dc.com/characters/bizarro">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/capuz_vermelho.png" alt="Capuz Vermelho" class="hero_image">
+                                <h2>Capuz Vermelho</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Capuz Vermelho</h2>
+                                <p>Capuz Vermelho, ou Jason Todd, é um ex-Robin que, após ser ressuscitado, adota uma abordagem brutal para combater o crime. Ele é conhecido por sua busca implacável por justiça e sua tensão com antigos aliados.</p>
+                                <a href="https://www.dc.com/characters/red-hood">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/constantine.png" alt="Constantine" class="hero_image">
+                                <h2>Constantine</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Constantine</h2>
+                                <p>John Constantine é um detetive do oculto e especialista em magia sombria. Armado com truques mágicos e um senso de moralidade questionável, ele combate forças infernais e tenta manter o equilíbrio entre o bem e o mal.</p>
+                                <a href="https://www.dc.com/characters/john-constantine">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/espectro.png" alt="Espectro" class="hero_image">
+                                <h2>Espectro</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Espectro</h2>
+                                <p>Originalmente um policial chamado Jim Corrigan, ele se torna o espectro da justiça, buscando punir o mal com uma força quase ilimitada e habilidades sobrenaturais. Sua missão é erradicar a injustiça de forma implacável e frequentemente extrema.</p>
+                                <a href="https://pt.wikipedia.org/wiki/Espectro_(DC_Comics)">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/exterminador.png" alt="Exterminador" class="hero_image">
+                                <h2>Exterminador</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Exterminador</h2>
+                                <p>O Exterminador, ou Slade Wilson, é um mercenário letal do universo DC. Com habilidades sobre-humanas e um intelecto tático afiado, ele é um adversário perigoso que oscila entre vilão e anti-herói em suas jornadas.</p>
+                                <a href="https://www.dc.com/characters/deathstroke">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/hera_venenosa.png" alt="Hera Venenosa" class="hero_image">
+                                <h2>Hera Venenosa</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Hera Venenosa</h2>
+                                <p>Hera Venenosa, ou Pamela Isley, é uma vilã do universo DC e ativista ambiental. Com a habilidade de controlar plantas e usar venenos, ela luta contra a destruição do meio ambiente, frequentemente enfrentando Batman e formando alianças com Arlequina.</p>
+                                <a href="https://www.dc.com/characters/poison-ivy">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/lobo.png" alt="Lobo" class="hero_image">
+                                <h2>Lobo</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Lobo</h2>
+                                <p>Lobo é um anti-herói do universo DC, conhecido por sua natureza brutal e seu humor sarcástico. Um Czarniano, ele é imortal e possui força sobre-humana, além de habilidades de combate excepcionais.</p>
+                                <a href="https://www.dc.com/characters/lobo">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/magia.png" alt="Magia" class="hero_image">
+                                <h2>Magia</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Magia</h2>
+                                <p>Magia, ou Enchantress, é uma feiticeira do universo DC e alter ego de June Moone. Com vastos poderes mágicos, ela pode manipular a realidade e invocar feitiços, lutando contra sua própria natureza sombria.</p>
+                                <a href="https://www.dc.com/characters/enchantress">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/mulher_gato.png" alt="Mulher-Gato" class="hero_image">
+                                <h2>Mulher-Gato</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Mulher-Gato</h2>
+                                <p>Mulher-Gato, ou Selina Kyle, é uma icônica anti-heroína do universo DC. Habilidosa ladra e artista marcial, ela é conhecida por sua agilidade e charme. Muitas vezes em conflito com Batman, Selina navega entre ser aliada e adversária, buscando justiça à sua maneira.</p>
+                                <a href="https://www.dc.com/characters/catwoman">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/pistoleiro.png" alt="Pistoleiro" class="hero_image">
+                                <h2>Pistoleiro</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Pistoleiro</h2>
+                                <p>Pistoleiro, ou Deadshot, é um anti-herói do universo DC, conhecido por sua habilidade letal com armas de fogo. Floyd Lawton é um assassino de aluguel que busca redenção, frequentemente atuando como membro da Força Tarefa X.</p>
+                                <a href="https://www.dc.com/characters/deadshot">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/rorschach.png" alt="Rorschach" class="hero_image">
+                                <h2>Rorschach</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Rorschach</h2>
+                                <p>Rorschach é um vigilante do universo DC, conhecido por sua moral inflexível e seu comportamento antisocial. Usando uma máscara que muda de forma, ele investiga crimes com uma abordagem brutal e sem compromissos. </p>
+                                <a href="https://dc.fandom.com/pt-br/wiki/Walter_Kovacs_(Watchmen)">Descubra mais →</a>
+                            </div>  
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/anti_hero/talia_al_ghul.png" alt="Talia al Ghul" class="hero_image">
+                                <h2>Talia al Ghul</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Talia al Ghul</h2>
+                                <p>Talia al Ghul é uma personagem icônica do universo DC, conhecida como filha de Ra's al Ghul, o líder da Liga das Sombras. Ela é uma guerreira habilidosa e estrategista, muitas vezes dividida entre seu amor por Batman e a lealdade ao legado de seu pai.</p>
+                                <a href="https://www.dc.com/characters/talia-al-ghul">Descubra mais →</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="teams">
+                <div class="teams">
+                    <h1>Equipes</h1>
+                    <div class="character_container">
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/teams/esquadrão_suicida.png" alt="Esquadrão Suicida" class="hero_image">
+                                <h2>Esquadrão Suicida</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Esquadrão Suicida</h2>
+                                <p>O Esquadrão Suicida é um grupo de vilões da DC Comics recrutados por Amanda Waller para missões perigosas em troca de redução de pena, como Harley Quinn e Deadshot, misturando humor e violência.</p>
+                                <a href="https://www.dc.com/characters/suicide-squad">Descubra mais →</a>
+                                <a href="suicide_squad.html">Membros</a>
+                            </div>
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/teams/liga_da_justiça.png" alt="Liga da Justiça" class="hero_image">
+                                <h2>Liga da Justiça</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Liga da Justiça</h2>
+                                <p>A Liga da Justiça é uma equipe de super-heróis da DC Comics, incluindo Superman, Batman e Mulher-Maravilha. Formada para enfrentar ameaças maiores, a Liga simboliza a união de forças e valores como justiça e coragem.</p>
+                                <a href="https://www.dc.com/characters/justice-league">Descubra mais →</a>
+                                <a href="justice_league.html">Membros</a>
+                            </div>
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/teams/Novos_Deuses.png" alt="Novos Deuses" class="hero_image">
+                                <h2>Novos Deuses</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Novos Deuses</h2>
+                                <p>Os Novos Deuses da DC Comics são seres poderosos de Nova Gênese e Apokolips, liderados por Highfather. Opostos a Darkseid, eles exploram temas de luz, escuridão, identidade e moralidade.</p>
+                                <a href="https://www.dc.com/characters/new-gods">Descubra mais →</a>
+                                <a href="new_gods.html">Membros</a>
+                            </div>
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/teams/titas.png" alt="Titãs" class="hero_image">
+                                <h2>Titãs</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Titãs</h2>
+                                <p>Os Jovens Titãs são uma equipe de super-heróis da DC Comics, incluindo Robin, Estelar, Ravena e Mutano. Eles simbolizam amizade, crescimento e a luta contra a injustiça, misturando ação e humor.</p>
+                                <a href="https://www.dc.com/characters/titans">Descubra mais →</a>
+                                <a href="titans.html">Membros</a>
+                            </div>
+                        </div>
+                        <div class="character_card">
+                            <div class="card-front">
+                                <img src="img/teams/tropa_dos_laternas_verde.png" alt="Tropa dos Laternas Verde" class="hero_image">
+                                <h2>Tropa dos Laternas Verde</h2>
+                            </div>
+                            <div class="card-back">
+                                <h2>Tropa dos Laternas Verde</h2>
+                                <p>A Tropa dos Lanternas Verdes é uma força policial intergaláctica da DC Comics, formada por heróis de várias raças que usam anéis de poder para manter a paz e simbolizar coragem e união.</p>
+                                <a href="https://www.dc.com/characters/green-lantern-corps">Descubra mais →</a>
+                                <a href="green_latern_corp.html">Membros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <a href="#" class="top">↑</a>
+
+    <footer>
+        <ul>
+            <li><a href="#">Politica de Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+            <li><a href="#">Opções de Anúncios</a></li>
+            <li><a href="#">Acessibilidades</a></li>
+            <li><a href="#">Gerenciar Prefêrencias</a></li>
+        </ul>
+        <h2>Criado por Anthonio Cesar S. Pereira</h2>
+    </footer>
+</body>
+</html>
